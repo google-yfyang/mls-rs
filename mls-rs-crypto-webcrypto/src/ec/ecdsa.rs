@@ -22,7 +22,7 @@ fn wasm_signature_to_der(signature: &[u8]) -> Result<Vec<u8>, der::Error> {
 }
 
 #[derive(Debug, Clone)]
-pub(crate) struct EcSigner {
+pub struct EcSigner {
     curve: &'static str,
     hash: &'static str,
     curve_bytesize: usize,

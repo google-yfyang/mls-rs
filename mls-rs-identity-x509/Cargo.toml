@@ -28,10 +28,10 @@ rand = "0.8"
 
 [target.'cfg(target_arch = "wasm32")'.dev-dependencies]
 wasm-bindgen-test = { version = "0.3" }
-getrandom = { version = "0.2", features = ["js"] }
+#getrandom = { version = "0.2", features = ["js"] }
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
-wasm-bindgen = { version = "0.2" }
+wasm-bindgen = { path = "../../wasm-bindgen" }
 
 [lints.rust]
 unexpected_cfgs = { level = "warn", check-cfg = ['cfg(mls_build_async)'] }

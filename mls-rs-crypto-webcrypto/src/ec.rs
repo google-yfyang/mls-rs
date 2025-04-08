@@ -4,7 +4,7 @@
 
 mod der_private_key;
 mod ecdh;
-mod ecdsa;
+pub mod ecdsa;
 
 pub(crate) use ecdh::Ecdh;
-pub(crate) use ecdsa::EcSigner;
+pub use ecdsa::EcSigner;

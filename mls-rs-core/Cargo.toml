@@ -48,7 +48,7 @@ assert_matches = "1.5.0"
 wasm-bindgen-test = { version = "0.3" }
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
-wasm-bindgen = { version = "0.2" }
+wasm-bindgen = { path = "../../wasm-bindgen" }
 
 [lints.rust]
 unexpected_cfgs = { level = "warn", check-cfg = ['cfg(mls_build_async)', 'cfg(coverage_nightly)'] }

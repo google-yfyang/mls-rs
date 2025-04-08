@@ -5,7 +5,7 @@
 #![cfg(all(mls_build_async, target_arch = "wasm32"))]
 
 mod aead;
-mod ec;
+pub mod ec;
 mod hkdf;
 mod key_type;
 
